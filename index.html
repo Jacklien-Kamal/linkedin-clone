@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading..</title>
+    <script src="https://kit.fontawesome.com/1eff5ac3a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#" class="logo1"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="logo"></a>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search" type="search" placeholder="search for posts ">
+                </div>
+
+            </div>
+            <div class="list-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-house"></i>
+                            <p>Home</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-user-group"></i>
+                            <p>My Network</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-briefcase"></i>
+                            <p style="margin-left: 10px;">Jobs</p>
+                        </a></li>
+                    <li><a class="nav-links" href="./messages.html"><i class="fa-solid fa-comment-dots"></i>
+                            <p>Messages </p>
+                        </a></li>
+                    <li><a onclick="hidNotBdg()" class="nav-links" href="./notification.html"><i
+                                class="fa-solid fa-bell"></i>
+                            <p>Notifications</p><span class="badge" id="bdg">3</span>
+                        </a></li>
+
+
+
+                    <li>
+
+                        <button class="dropbtn" onclick="Show()">
+                            <div><img src="./css/images/my profil profil.jfif" alt="prof"></div> <span>Me</span>
+                            <i class="fa-solid fa-caret-down" style="background-color:white"></i>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="div1-drop">
+                                <div class="profile-drop-list"><img src="./css/images/my profil profil.jfif" alt="">
+                                </div>
+                                <div style="width:70% ">
+                                    <h5>Jacklien Kamal</h5>
+                                    <p>
+                                        Front-end Developer | ITI trainee
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="view-profil-btn"><a class="view-prof" href="myProfil.html">View Profile</a>
+                            </div>
+                            <p class="hr">_______________________________</p>
+                            <div class="div2-drop">
+                                <h4>Account</h4>
+                                <a href="#">Try Premium for EGP90</a>
+                                <a href="#"> Setting & Privacy</a>
+                                <a href="#"> Help</a>
+                                <a href="#"> Language</a>
+                            </div>
+
+                            <p class="hr">_______________________________</p>
+                            <div class="div2-drop">
+                                <h4>Manage</h4>
+                                <a href="#">Posts & Activity</a>
+                                <a href="#">Job posting Account</a>
+
+                            </div>
+                            <p class="hr">_______________________________</p>
+                            <div class="div3-drop">
+                                <a href="login.html">Sign Out</a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+        <div class="left">
+            <div class="profil_info">
+
+                <div id="img_background"><img src="./css/images/backgrounf.jfif" alt=""></div>
+
+                <div class="personnal_info">
+                    <span id="photo_profil"><img src="./css/images/my profil profil.jfif" alt=""></span>
+                    <a href="myProfil.html">
+                        <h5> Jacklin Kmal </h5>
+                    </a>
+                    <p>Front-end developer | ITI trainee</p>
+                </div>
+            </div>
+            <div class="semi-info2">
+
+                <div class="profil_info2">
+                    <div class="vues_post">
+                        <p class="profil_check"><a href="#">Profile Viewers &nbsp; <span>29</span></a></p>
+                        <p class="post_vue"><a href="#">Posts impressions &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <span>19</span></a></p>
+                    </div>
+                    <div class="premium">
+                        <p>Grow your career with Premium</p>
+                        <span> Try Premium for EGP0</span>
+                    </div>
+                    <span class="my_element"><i class="fa-solid fa-bookmark"></i>My elements</span>
+                </div>
+                <div class="favourit">
+                    <div class="preview">
+                        <h6>Recent</h6>
+                        <p><a href="#"><i class="fa-solid fa-people-group"></i> <span>JavaScript</span> </a></p>
+                        <p><a href="#"><i class="fa-solid fa-people-group"></i> <span>Outsourcing Web, mobile
+                                    ...</span></a> </p>
+                        <p><a href="#"><i class="fa-solid fa-people-group"></i> <span>Software & Web
+                                    applicatio...</span> </a></p>
+                        <p><a href="#"><i class="fa-solid fa-people-group"></i> <span>Developpeur PHP</span></a> </p>
+                        <p><a href="#"><i class="fa-solid fa-people-group"></i> <span>Developpeur Web debutant...</span>
+                            </a></p>
+                    </div>
+                    <div class="group">
+                        <h6><a href="#"> Groupes</a></h6>
+                        <p><a href="#"><i class="fa-solid fa-people-group"></i> <span>JavaScript</span> </a></p>
+                        <p><a href="#"><i class="fa-solid fa-people-group"></i> <span>Outsourcing Web, mobile...</span>
+                            </a></p>
+                        <p><a href="#"><i class="fa-solid fa-people-group"></i> <span>Software & Web
+                                    applicaatio...</span> </a></p>
+                        <p class="see-more"> <a href="#"> <span>see all </span><i
+                                    class="fa-solid fa-angle-down"></i></a></p>
+                    </div>
+                    <p class="event" id="event_p"><a href="#"><span>Events </span> <i class="fa-solid fa-plus"></i></a>
+                    </p>
+                    <p class="follow" id="follow_p"><a href="#"><span>Followed Hashtags</span> <i
+                                class="fa-solid fa-angle-up"></i></a></p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mid">
+            <div class="post">
+                <div class="post-top">
+                    <img src="./css/images/my profil profil.jfif" alt="prof">
+                    <input type="text" placeholder="  Start a post">
+
+                </div>
+                <div class="post-bottom">
+                    <p><a href="#"><i class="fa-solid fa-image" style="color: rgb(83, 125, 202);"></i><span>Media</span>
+                    </p></a>
+
+                    <p><a href="#"><i class="fa-solid fa-calendar-days"
+                                style="color: rgb(233, 135, 23);"></i><span>Events</span></p></a>
+                    <p><a href="#"><i class="fa-solid fa-square-pen" style="color: rgb(241, 38, 140);"></i><span>Write a
+                                article</span></p></a>
+
+                </div>
+
+            </div>
+            <div class="middle_line" id="center_line">
+                <span class="line"></span>
+                <span class="line_text"> Classer par : <span> Pertinence<i
+                            class="fa-solid fa-caret-down"></i></span></span>
+                <div class="line_menu_toggle">
+                    <p>Pertinent</p>
+                    <p>Recent</p>
+                </div>
+            </div>
+            <div class="feeds">
+
+                <div class="feed1">
+                    <div class="feed-top">
+                        <img src="./css/images/profil11.jpg">
+                        <span> <a href="#"> Johny Mayer • </a><span style="font-size: 13px; margin-left:0%">2nd</span>
+                            <p>web develober</p>
+                            <p>1h • <i class="fa-solid fa-earth-americas"></i></p>
+                        </span>
+                    </div>
+                    <div class="feed-body">
+                        <p>My dear Staff and Trainees, I have been touched by your warm and sincere feelings 💖, Thank
+                            you so much for your appreciation and love, I will do everything possible and will do my
+                            best for all of you, and will try as always to be sure that
+                            <span id="dots">... <button onclick="seeMore()" id="myBtn">See more</button></span>
+                            <span id="more"> everyone of you will be able to achieve his goals.
+                                Thank you Intake 44 and ICC SWF track Assiut Branch, I love all of you.</span>
+                        </p>
+                    </div>
+                    <div class="react">
+                        <div onclick="like(this)"><span class="like"> <i class="fa-solid fa-thumbs-up"></i> </span> Like
+                        </div>
+                        <div> <span> <i class="fa-regular fa-comment"></i></span> Comment</div>
+                        <div><span><i class="fa-solid fa-repeat"></i> </span>Repost</div>
+                        <div> <span> <i class="fa-regular fa-paper-plane"></i> </span> Send</div>
+                    </div>
+                </div>
+                <div class="feed2">
+                    <div class="feed-top">
+                        <img src="./css/images/prof23.jpg">
+                        <span> <a href="#"> Jessy Albert • </a><span style="font-size: 13px; margin-left:0%">2nd</span>
+                            <p>Full Stuck ||.Net developer</p>
+                            <p>23h • <i class="fa-solid fa-earth-americas"></i></p>
+                        </span>
+                    </div>
+                    <div class="feed-body">
+                        <p>
+                            Grow your business with the brand safety controls LinkedIn is known for. Get greater reach,
+                            better results with LinkedIn Audience Network. </p>
+                        <img id="post-slider" src="./css/images/1.jpg" onclick="slider()">
+                    </div>
+                    <div class="react">
+                        <div onclick="like(this)"><span class="like"> <i class="fa-solid fa-thumbs-up"></i> </span> Like
+                        </div>
+                        <div> <span> <i class="fa-regular fa-comment"></i></span> Comment</div>
+                        <div><span><i class="fa-solid fa-repeat"></i> </span>Repost</div>
+                        <div> <span> <i class="fa-regular fa-paper-plane"></i> </span> Send</div>
+                    </div>
+                </div>
+
+                <div class="feed2">
+                    <div class="feed-top">
+                        <img src="./css/images/profil17.jpg">
+                        <span> <a href="#"> Osman Deman • </a><span style="font-size: 13px; margin-left:0%">3rd</span>
+                            <p>UI/UX DEveloper</p>
+                            <p>1d • <i class="fa-solid fa-earth-americas"></i></p>
+                        </span>
+                    </div>
+                    <div class="feed-body">
+                        <p>
+                            Part of the decoration activities for Devfest event❤️‍🔥
+                        </p>
+                        <img src="./css/images/photo2-min.jpg">
+                    </div>
+                    <div class="react">
+                        <div onclick="like(this)"><span class="like"> <i class="fa-solid fa-thumbs-up"></i> </span> Like
+                        </div>
+                        <div> <span> <i class="fa-regular fa-comment"></i></span> Comment</div>
+                        <div><span><i class="fa-solid fa-repeat"></i> </span>Repost</div>
+                        <div> <span> <i class="fa-regular fa-paper-plane"></i> </span> Send</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div class="follow-p">
+                <h4>Add to your feed</h4>
+                <div class="sugg">
+                    <img src="./css/images/profil17.jpg">
+                    <span> <a href="#"> Osman Deman </a><span style="font-size: 13px; margin-left:0%"></span>
+                        <p style="color: gray;">Innovation PDG et croissance Mondiale,
+                            cliquez sur SUIVRE pour les derniers...</p>
+                        <button onclick="follow(this)"> +Follow</button>
+                    </span>
+
+                </div>
+                <div class="sugg">
+                    <img src="./css/images/logo7.png">
+                    <span> <a href="#"> SWIFT ACT </a><span style="font-size: 13px; margin-left:0%"></span>
+                        <p style="color: gray;">Company • Information Technology and Services</p>
+                        <button onclick="follow(this)"> +Follow</button>
+                    </span>
+
+                </div>
+                <div class="sugg">
+                    <img src="./css/images/my profil profil.jpg">
+                    <span> <a href="#"> Amir Ayman </a><span style="font-size: 13px; margin-left:0%"></span>
+                        <p style="color: gray;">IITI trainee in Profrssional Web & BI track | Full stack .Net |Google
+                            Developer..</p>
+                        <button onclick="follow(this)"> +Follow</button>
+                    </span>
+
+                </div>
+                <a href="#" style="font-size: 15px; color:rgb(80, 78, 78)">View all recommindation <i
+                        class="fa-solid fa-arrow-right"> </i></a>
+            </div>
+            <aside class="pub_img_text">
+                <div class="pub_img">
+                    <img id="fade"
+                        src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png"
+                        onload="startSlide()" alt="">
+                </div>
+                <div class="all_links">
+                    <a href="#"> About &nbsp; Accessibility &nbsp; Help Center<br> Privacy & Terms <br>
+                        Ad Choices &nbsp; Advertising <br> Business Services <br>
+                        Get the LinkedIn app </a> <br>
+                    <span> LinkedIn Corporation © 2024</span>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            this.document.title = "LinkedIn"
+        })
+    </script>
+</body>
+
+</html>

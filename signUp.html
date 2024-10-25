@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(243, 240, 237);
+
+            font-family: 'Open Sans', sans-serif;        }
+
+        .header {
+            width: 100%;
+            height: 70px;
+            position: sticky;
+
+
+        }
+
+        .header img {
+            width: 12%;
+            height: 75px;
+            float: left;
+            position: relative;
+        }
+
+        .login {
+            margin-top: 40px;
+        }
+
+        #P1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .login {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            width: 35%;
+            margin-left: 30%;
+            padding: 15px;
+        }
+
+
+        input {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width: 80%;
+            border: 1px solid rgba(27, 27, 27,.7);
+            border-radius: 5px;
+            padding: 15px;
+            background-color: white;
+            margin-left: 30px;
+
+        }
+        #rgstr_btn{
+            background-color: rgb(36, 102, 245);
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            border-radius: 27px;
+            color: white;
+            margin-top: 40px;
+            margin-left: 45px;
+        }
+        #helper-text{
+            font-size: 10px;
+            color: red;
+            display: none;
+        }
+        .lable{
+            margin-left: 30px;
+            font-size: 15px;
+        }
+        #or{
+            text-align: center;
+            margin-left: 18px;
+            color:rgba(31, 30, 30,.4)
+        }
+        #p2{
+            margin-left: 90px;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./css/images/Linkedin_logo_PNG4.png">
+    </div>
+    <P id="P1">Make the most of your professional life
+    </P>
+    <div class="login">
+        <form name='form-login'>
+
+
+
+            <label class="lable" for="name">Email</label><br>
+            <input type="email" id="name" placeholder="Username" required><br>
+
+            <label class="lable" for="pw">Password</label><br>
+            <input type="password" id="pw" placeholder="Password" required>
+
+            <ul id="helper-text">
+                <li class="length">Must be at least 8 characters long.</li>
+                <li class="lowercase">Must contain a lowercase letter.</li>
+                <li class="uppercase">Must contain an uppercase letter.</li>
+                <li class="special">Must contain a number or special character.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Agree & Join" onclick="store(event)">
+<div id="or"> ________________ or ________________</div>
+<p id="p2">Already on LinkedIn  <a href="login.html">Sign in</a></p>
+        </form>
+
+    </div>
+
+    <script>
+
+        function store(event) {
+            event.preventDefault();
+            var name = document.getElementById('name');
+            var pw = document.getElementById('pw');
+            var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{1,8}$/;
+
+            if (name.value.length === 0 || pw.value.length === 0) {
+                document.getElementById("helper-text").style.display="block"
+               
+            } else if (pw.value.length > 8) {
+                document.getElementById("helper-text").style.display="block"
+            } else if (!passwordRegex.test(pw.value)) {
+                document.getElementById("helper-text").style.display="block"
+            } else {
+                localStorage.setItem('name', name.value);
+                localStorage.setItem('pw', pw.value);
+                alert('Your account has been created');
+                window.location.href = "./login.html";  // Use forward slashes in the file path
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <script src="https://kit.fontawesome.com/1eff5ac3a2.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#" class="logo1"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="logo"></a>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search" type="search" placeholder="search for posts ">
+                </div>
+
+            </div>
+            <div class="list-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-links" href="index.html"><i class="fa-solid fa-house"></i>
+                            <p>Home</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-user-group"></i>
+                            <p>My Network</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-briefcase"></i>
+                            <p style="margin-left: 10px;">Jobs</p>
+                        </a></li>
+                    <li><a class="nav-links" href="./messages.html"><i class="fa-solid fa-comment-dots"></i>
+                            <p>Messages </p>
+                        </a></li>
+                    <li><a onclick="hidNotBdg()" class="nav-links" href="#"><i class="fa-solid fa-bell"></i>
+                            <p>Notifications</p>
+                        </a></li>
+
+
+
+                    <li>
+
+                        <button class="dropbtn" onclick="Show()">
+                            <div><img src="./css/images/my profil profil.jfif" alt="prof"></div> Me
+                            <i class="fa-solid fa-caret-down" style="background-color:white"></i>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="div1-drop">
+                                <div class="profile-drop-list"><img src="./css/images/my profil profil.jfif" alt="">
+                                </div>
+                                <div style="width:70% ">
+                                    <h5>Jacklien Kamal</h5>
+                                    <p>
+                                        Front-end Developer | ITI trainee
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="view-profil-btn"><a class="view-prof" href="myProfil.html">View Profile</a></div>
+                            <p class="hr">_______________________________</p>
+                            <div class="div2-drop">
+                                <h4>Account</h4>
+                                <a href="#">Try Premium for EGP90</a>
+                                <a href="#"> Setting & Privacy</a>
+                                <a href="#"> Help</a>
+                                <a href="#"> Language</a>
+                            </div>
+
+                            <p class="hr">_______________________________</p>
+                            <div class="div2-drop">
+                                <h4>Manage</h4>
+                                <a href="#">Posts & Activity</a>
+                                <a href="#">Job posting Account</a>
+
+                            </div>
+                            <p class="hr">_______________________________</p>
+                            <div class="div3-drop">
+                                <a href="login.html">Sign Out</a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="notification_page">
+        <div class="not_left-container">
+            <h6>Manage your Notifications</h6>
+           
+            <div class="see_favories">
+                <p> <a href="#">View Settings</a></p> 
+            </div>  
+        </div>
+
+
+        <!-- /* ---------center box notification box----- */ -->
+       
+        <div class="not_center_container">
+      
+            <div onclick="changeBG(this)" class="notification" id="f-not">
+                <img class="not_profil_photo"  src="./css/images/pr1.jpg" alt="#">
+                <div class="notification_photo_name" >
+                    <p><span> Erwann Martin</span> shared his new position as Consultant at SII Group at <span> SII Group : </span>: I am pleased to announce that I am...</p>
+                    <div class="congratulation">
+                        <p>Send your congratulations</p>
+                    </div>
+                </div>
+                <div class="publication_time">
+                    <span> 22 min </span>
+                </div>
+            </div>
+            <div onclick="changeBG(this)" class="notification ">
+                <img class="not_profil_photo" src="./css/images/profil8-min.jpg" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Lionnel Mario</span> Rodolphe Meras and 9 other people reacted to your post</p>
+                    <div class="publication_img_text">
+                        <img src="./css/images/f3.jpg" alt="">
+                        <p>#ORIGINAL VS #CLONE #junior #web <br> #developpeur</p>
+                    </div>
+                    <p>11 reactions . 20 commentaires</p>
+                </div>
+                <div class="publication_time">
+                    <span> &nbsp;&nbsp; &nbsp;&nbsp; 28 min </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="./css/images/logo4-min.png" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>NAC SERVICE</span>  a company you just followed <br> shared a post: 🚨 #Bachelor #Cybersecurity 🚨 🔹 Hurry up! It's already time to register for...</p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;  29 min  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img class="not_profil_photo" src="./css/images/profil5-min.jpg" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Lionnel Mario</span>Rodolphe Meras and 9 other people reacted to your post</p>
+                    <div class="publication_img_text">
+                        <img src="./css/images/photo2-min.jpg" alt="">
+                        <p>#ORIGINAL VS #CLONE #junior #web <br> #developpeur</p>
+                    </div>
+                    <p>11 reactions . 55 commentaires</p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp; 30 min  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img class="not_profil_photo" src="./css/images/my photo.jpg" alt="#">
+                <div class="notification_photo_name">
+                    <p>To date, your post has been viewed 78 times. Try mentioning someone in a comment to
+                        keep the conversation going.</p>
+                    <div class="congratulation">
+                        <p>Mention someone</p>
+                    </div>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp; 30 min <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img class="not_profil_photo" src="./css/images/profil5-min.jpg" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Lionnel Mario</span>Rodolphe Meras and 9 other people reacted to your post</p>
+                    <div class="publication_img_text">
+                        <img src="./css/images/photo2-min.jpg" alt="im">
+                        <p>#ORIGINAL VS #CLONE #junior #web <br> #developpeur</p>
+                    </div>
+                    <p>11 reactions . 20 commentaires</p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp; 50 min <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...  </span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -----------right box---------- -->
+
+
+        <div class="not_right-container">
+            <aside class="pub_img_text">
+                <div class="pub_img">
+                    <img src="./css/images/pub.jpg" alt="">
+                </div>
+                <div class="all_links">
+                    <a href="#"> Infos &nbsp;Accessibility &nbsp; Customer support <br> Terms and conditions and privacy<br>
+                        Preferences Ads Advertising &nbsp; <br>Professional solutions                        <br>
+                        Get the LinkedIn app</a>
+                    <span> LinkedIn Corporation © 2024</span>
+                </div>
+            </aside>
+        </div>   
+    </main>
+
+
+
+    </article>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

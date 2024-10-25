@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <script src="https://kit.fontawesome.com/1eff5ac3a2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#" class="logo1"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="logo"></a>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search" type="search" placeholder="search for posts ">
+                </div>
+
+            </div>
+            <div class="list-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-links" href="index.html"><i class="fa-solid fa-house"></i>
+                            <p>Home</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-user-group"></i>
+                            <p>My Network</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-briefcase"></i>
+                            <p style="margin-left: 10px;">Jobs</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-comment-dots"></i>
+                            <p>Messages </p>
+                        </a></li>
+                    <li><a onclick="hidNotBdg()" class="nav-links" href="./notification.html"><i class="fa-solid fa-bell"></i>
+                            <p>Notifications</p>
+                        </a></li>
+
+
+
+                    <li>
+
+                        <button class="dropbtn" onclick="Show()">
+                            <div><img src="./css/images/my profil profil.jfif" alt="prof"></div> Me
+                            <i class="fa-solid fa-caret-down" style="background-color:white"></i>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="div1-drop">
+                                <div class="profile-drop-list"><img src="./css/images/my profil profil.jfif" alt="">
+                                </div>
+                                <div style="width:70% ">
+                                    <h5>Jacklien Kamal</h5>
+                                    <p>
+                                        Front-end Developer | ITI trainee
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="view-profil-btn"><a class="view-prof" href="myProfil.html">View Profile</a></div>
+                            <p class="hr">_______________________________</p>
+                            <div class="div2-drop">
+                                <h4>Account</h4>
+                                <a href="#">Try Premium for EGP90</a>
+                                <a href="#"> Setting & Privacy</a>
+                                <a href="#"> Help</a>
+                                <a href="#"> Language</a>
+                            </div>
+
+                            <p class="hr">_______________________________</p>
+                            <div class="div2-drop">
+                                <h4>Manage</h4>
+                                <a href="#">Posts & Activity</a>
+                                <a href="#">Job posting Account</a>
+
+                            </div>
+                            <p class="hr">_______________________________</p>
+                            <div class="div3-drop">
+                                <a href="#">Sign Out</a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="messages_container">
+
+        <!-- ----------------left_box messages------- -->
+
+        <section class="message_left_box">
+            <div class="messages_left_container_box1">
+                <div class="message_left_container_box1_title">
+                    <p>Messagerie</p>
+                    <div class="icons_container"></div>
+                </div>
+                <div class="message_input_container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="message_input" id="search_message" type="text" placeholder="Rechercher dans les messages" onkeyup="dynamicSearch()">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+
+                <div class="meassage_profil_container">
+                    <div class="message_profils_sider">
+                        <div class="message_profil_item message_one others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil2-min.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">Starky Didier</span>&nbsp; &nbsp; &nbsp;  <span class="message_profil_date">20 avr.</span>
+                                     <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i>
+                                </p>
+                                <p>Starky: Je viens de <br> recevoir ton cv</p>                             
+                            </div>
+                        </div>
+
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">Noha Adel</span> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   <span class="message_profil_date">19 avr.</span> <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Gleve:Il y a des <br>  stages disponiblemt </p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/freestocks-9UVmlIb0wJU-unsplash.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">Amira ALi</span> &nbsp; <span class="message_profil_date">19 avr.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>George:I will let you know</p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil8-min.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p> <span class="name_pro">Christoph Rode</span> &nbsp; &nbsp; <span class="message_profil_date">15 avr.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Christoph: Je viens <br> recevoir ton cv</p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil5-min.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">Sindy Rose</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="message_profil_date">13 avr.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Sindy: Why did you <br> send it here?</p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil3-min.jpeg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p> <span class="name_pro">Jean Marc</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="message_profil_date">6 avr.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>jean: JQue voulais-tu <br> me dire hier?</p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil4-min.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">Eunice Sie </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">5 avr.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Eunice: Are you interesting  <br> for an internship? </p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil10-min.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">Rodriguo  </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <span class="message_profil_date">20 mar.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Rodriguo: Pas de soucis je <Br> te ferai signe.</Br></p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil11.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p> <span class="name_pro">Patric </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <span class="message_profil_date">10 mar.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Patric: La vie n'est pas facile</p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil8-min.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p> <span class="name_pro">Hoane louis </span> &nbsp; &nbsp;&nbsp; &nbsp; <span class="message_profil_date">11 fev.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Hoane: j'ai rien a dire </p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil16.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p> <span class="name_pro">Jonas louis </span> &nbsp; &nbsp;&nbsp; &nbsp; <span class="message_profil_date">11 fev.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Jonas: j'ai rien a dire </p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil8-min.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">Xavier </span> &nbsp; &nbsp;&nbsp; &nbsp; <span class="message_profil_date">11 fev.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Xavier: j'ai rien a dire </p>
+                            </div>
+                        </div>
+                        <div class="message_profil_item others_message">
+                            <div class="message_profil_photo">
+                                <img src="./css/images/profil11.jpg" alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">Pral vie</span> &nbsp; &nbsp;&nbsp; &nbsp; <span class="message_profil_date">11 fev.</span><i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i></p>
+                                <p>Pral: j'ai rien a dire </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- --------------left container_---box2------------- -->
+
+            <section class="messages_left_container_box2">
+                <div class="discution_header">
+                    <div class="discution_header_name_and_text">
+                        <h3>Starky Didier</h3>
+                        <div class="discution-header_text">
+                            <div class="discution_online"></div>
+                            <p> Disponible sur mobile</p>
+                        </div>
+                    </div>
+                    <div class="discution_header_icons"></div>
+                </div>
+
+                <div class="discution_container">
+                    <div class="discution_content">
+                        <div class="discution_friend_profil">
+                            <div class="discution_friend_profil_photo"><img src="./css/images/profil2-min.jpg" alt=""></div>
+                            <h3>Starky Didier <span>- 1er</span></h3>
+                            <p>Senior Fullstack Developer</p>
+                        </div>
+                        <div class="discution_line">
+                            <p>20 AVR.</p>
+                        </div>
+
+                        <!-- <div class="conversation_messages"> -->
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/profil2-min.jpg" alt=""></div>
+                                <div class="my_message_text">
+
+                                    <h3><a href="#">Starky Didier</a> <span>12:00</span></h3>
+                                    <p>Hello Jacklien, would you like to join our team?<br> TYou have the junior profile that we are looking for</p>
+                                </div>
+                            </div>
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt=""></div>
+                                <div class="my_message_text">
+                                    <h3><a href="#">Jacklien Kmal</a> <span>12:05</span></h3>
+                                    <p>Hello, delighted to know that my profile meets <br>your expectations. It is with pleasure that I will join your team. </p>
+                                </div>
+                            </div>
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/profil2-min.jpg" alt=""></div>
+                                <div class="my_message_text">
+                                    <h3><a href="#">Starky Didier</a> <span>12:10</span></h3>
+                                    <p>We are a team of Devs, most of whom  <br> are seniors, we are looking <br> of a junior profile to assist us, I think that
+                                       <br>   you will do the trick</p>
+                                </div>
+                            </div>
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt=""></div>
+                                <div class="my_message_text">
+                                    <h3><a href="#">Jacklien Kmal</a> <span>12:11</span></h3>
+                                    <p> What technologies do you mainly work on? </p>
+                                </div>
+                            </div>
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/profil2-min.jpg" alt=""></div>
+                                <div class="my_message_text">
+                                    <h3><a href="#">Starky Didier</a> <span>12:15</span></h3>
+                                    <p> Most of our projects revolve around the web. <br> However, we also work on applications
+                                        <br> <br> HTML, Css, js, React, bootstrap et node js.</p>
+                                </div>
+                            </div>
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt=""></div>
+                                <div class="my_message_text">
+                                    <h3><a href="#">Jacklien Kmal</a> <span>12:16</span></h3>
+                                    <p>Haa okay it's cool  </p>
+                                </div>
+                            </div>
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/profil2-min.jpg" alt=""></div>
+                                <div class="my_message_text">
+                                    <h3><a href="#">Starky Didier</a> <span>12:30</span></h3>
+                                    <p>Can you send your CV to this address. stdrecrutement@gmail.com .</p>
+                                </div>
+                            </div>
+                            
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt=""></div>
+                                <div class="my_message_text">
+                                    <h3><a href="#">Jacklien Kmal</a> <span>12:35</span></h3>
+                                    <p>Okay, I'll do it right away.</p>
+                                </div>
+                            </div>
+                            <div class="my_message">
+                                <div class="my_message_photo_profil"><img src="./css/images/profil2-min.jpg" alt=""></div>
+                                <div class="my_message_text">
+                                    <h3><a href="#">Starky Didier</a> <span>19:20</span></h3>
+                                    <p>I just received your CV</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <textarea name="message" id="message" placeholder="Rediger un message..." class="send_message"></textarea>
+                <div class="discution_icons_erea">
+                    <div class="icons_erea">
+                        <i class="fa-solid fa-image"></i>
+                        <i class="fa-solid fa-folder-plus"></i>
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <div class="send_text">
+                        <p>Evoyer </p>
+                        <p>...</p>
+                    </div>
+                </div>
+
+
+            </section>
+        </section>
+
+   <!-- ----------------right_box messages------- -->
+
+   <div class="not_right-container">
+    <aside class="pub_img_text">
+        <div class="pub_img">
+            <img src="./css/images/pub.jpg" alt="">
+        </div>
+        <div class="all_links">
+            <a href="#"> Infos &nbsp;Accessibility &nbsp; Customer support <br> Terms and conditions and privacy<br>
+                Preferences Ads Advertising &nbsp; <br>Professional solutions                        <br>
+                Get the LinkedIn app</a>
+            <span> LinkedIn Corporation © 2024</span>
+        </div>
+    </aside>
+   </div>  
+     
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
+</body>
+</html>

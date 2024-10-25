@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1eff5ac3a2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body >
+    <header class="header" >
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#" class="logo1"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="logo"></a>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search" type="search" placeholder="search for posts ">
+                </div>
+
+            </div>
+            <div class="list-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-links" href="index.html"><i class="fa-solid fa-house"></i>
+                            <p>Home</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-user-group"></i>
+                            <p>My Network</p>
+                        </a></li>
+                    <li><a class="nav-links" href="#"><i class="fa-solid fa-briefcase"></i>
+                            <p style="margin-left: 10px;">Jobs</p>
+                        </a></li>
+                    <li><a class="nav-links" href="./messages.html"><i class="fa-solid fa-comment-dots"></i>
+                            <p>Messages </p>
+                        </a></li>
+                    <li><a onclick="hidNotBdg()" class="nav-links" href="./notification.html"><i class="fa-solid fa-bell"></i>
+                            <p>Notifications <span class="badge" id="bdg">3</span></p>
+                        </a></li>
+
+
+
+                    <li>
+
+                        <button class="dropbtn" onclick="Show()">
+                            <div><img id="me-prof" src="./css/images/my profil profil.jfif" alt="prof"></div>  <span>Me</span>
+                            <i class="fa-solid fa-caret-down" style="background-color:white"></i>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="div1-drop">
+                                <div class="profile-drop-list"><img src="./css/images/my profil profil.jfif" alt="">
+                                </div>
+                                <div style="width:70% ">
+                                    <h5>Jacklien Kamal</h5>
+                                    <p>
+                                        Front-end Developer | ITI trainee
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="view-profil-btn"><a class="view-prof" href="myProfil.html">View Profile</a></div>
+                            <p class="hr">_______________________________</p>
+                            <div class="div2-drop">
+                                <h4>Account</h4>
+                                <a href="#">Try Premium for EGP90</a>
+                                <a href="#"> Setting & Privacy</a>
+                                <a href="#"> Help</a>
+                                <a href="#"> Language</a>
+                            </div>
+
+                            <p class="hr">_______________________________</p>
+                            <div class="div2-drop">
+                                <h4>Manage</h4>
+                                <a href="#">Posts & Activity</a>
+                                <a href="#">Job posting Account</a>
+
+                            </div>
+                            <p class="hr">_______________________________</p>
+                            <div class="div3-drop">
+                                <a href="login.html">Sign Out</a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="prof-left">
+            <div class="myInfo">
+                <div class="prof-cover">
+                    <label  id="change-img2" for="image-input2"> <i class="fa-solid fa-pencil"></i></label></i>
+                    <img class="cover" id="cover" src="./css/images/backgrounf.jfif">
+                    <input type="file" onchange="changeCover()" id="image-input2" accept="image/*">
+                   
+                    <div class="pro-pic">
+                        <div class="profile-container">
+                            <img  id="profile-image" src="./css/images/my profil profil.jfif" alt="Profile Picture">
+                            <input type="file" id="image-input" onchange="changePro(event)" accept="image/*">
+                            <label  id="change-img" for="image-input">change Image</label>
+                          </div>
+                    </div>
+
+                    
+
+                </div>
+                <div class="info">
+
+                    <span style="display: flex;">
+                        <h3>Jacklin Kmal</h3> <a href="#"><img width="40px" height="40px"
+                                src="https://media.licdn.com/dms/image/C560BAQEz-Utc2Fgd7A/company-logo_100_100/0/1631365164155?e=1712793600&v=beta&t=usumh-GGLJJij4vbn522ekwDR9qEC-2KcxzDs6Rzjgs"
+                                alt=""> <span>Assiut University</span></a>
+                        <i class="fa-solid fa-pencil"></i>
+                    </span>
+                    <p>Front-end Developer |ITI trainee</p>
+                    <p style="font-size: 13px;">Cairo, Cairo, Egypt · <a href="#"> Contact Info</a></p>
+
+                    <a id="connector" href="#" value="87">87</a> <a> Connections</a>
+
+
+                </div>
+                <div class="btns">
+                    <button class="open-to">Open to</button>
+                    <button class="add-sec">Add profile section</button>
+                    <button class="more-sec">More</button>
+
+                </div>
+
+            </div>
+
+            <div class="analytic">
+                <div class="analytic1">
+                    <h3 style="margin-bottom: 0px;">Analytics</h3>
+                    <p style="margin-bottom: 10px;"> <i class="fa-solid fa-eye"></i> Private to you</p>
+
+                </div>
+
+                <div class="anaytic2">
+                    <div>
+
+                        <p><i class="fa-solid fa-user-group"></i> <a>32 profile views</a><br>
+                            Discover who's viewed your profile.</p>
+                    </div>
+                    <div>
+
+                        <p><i class="fa-solid fa-chart-simple"></i> <a>119 post impressions</a><br>
+
+                            Check out who's engaging with your posts..</p>
+                    </div>
+                    <div>
+
+                        <p><i class="fa-solid fa-magnifying-glass"></i> <a>9 search appearances</a><br>
+                            See how often you appear in search results.</p>
+                    </div>
+                </div>
+                <button> Show all analytics <i class="fa-solid fa-arrow-right"> </i></button>
+            </div>
+
+            <div class="analytic">
+                <div class="analytic1">
+                    <h3 style="margin-bottom: 0px;">Resources</h3>
+                    <p style="margin-bottom: 10px;"> <i class="fa-solid fa-eye"></i> Private to you</p>
+
+                </div>
+
+                <div class="anaytic3">
+                    <div style="border-bottom: 1px solid rgb(194, 192, 192);">
+                        <p><i class="fa-solid fa-satellite-dish"></i> <a>Create mode <span id="sp">off</span></a> <br>
+                            Get discovered, showcase content on your profile, and get access to creator tools.</p>
+                    </div>
+
+                    <div>
+                        <p><i class="fa-solid fa-user-group"></i> <a>My Netowrk</a><br> See and manage your connections
+                            and interests.See and manage your connections and interests.
+                        </p>
+                    </div>
+
+                </div>
+                <button> Show all 5 Resources <i class="fa-solid fa-arrow-right"> </i></button>
+
+
+            </div>
+            <div class="analytic">
+                <div class="analytic4">
+
+                    <h3>About <i class="fa-solid fa-pencil"></i></h3>
+                    <p style="margin-bottom: 10px;"> SPARK Foundation internship || ITI trainee</p>
+
+                </div>
+
+
+                <div></div>
+                <div></div>
+
+
+
+            </div>
+            
+
+        </div>
+        <div class="prof-right">
+
+            <div class="lang">
+
+                <div class="d1">
+                    <h3>Profile Language <i class="fa-solid fa-pencil"></i></h3>
+                    <p>English</p>
+                </div>
+
+                <div>
+                    <h3>Public profile & URL <i class="fa-solid fa-pencil"></i></h3>
+                    <p>www.linkedin.com/in/jacklin-kmal-17191b1bb</p>
+                </div>
+
+            </div>
+            <div class="img"><img src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" alt=""></div>
+            <div class="follow-p">
+                <h4>People also viwed</h4>
+                <div class="sugg">
+                    <img src="./css/images/pr3.jpg">
+                        <span> <a href="#" >  Mona Samir </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">Innovation PDG et croissance Mondiale,
+                                cliquez sur SUIVRE pour les derniers...</p>
+                            <button onclick="addConnector(this)"> <i class="fa-solid fa-user-plus"></i> Connect</button>
+                        </span>
+                    
+                </div>
+                <div class="sugg">
+                    <img src="./css/images/logo7.png">
+                        <span> <a href="#" >  SWIFT ACT </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">Company • Information Technology and Services</p>
+                            <button onclick="addConnector(this)"><i class="fa-solid fa-user-plus"></i> Connect</button>
+                        </span>
+                    
+                </div>
+                <div class="sugg">
+                    <img src="./css/images/my profil profil.jpg">
+                        <span> <a href="#" >  Amir Ayman </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">IITI trainee in Profrssional Web & BI track | Full stack .Net |Google Developer..</p>
+                            <button onclick="addConnector(this)"> <i class="fa-solid fa-user-plus"></i>Connect</button>
+                        </span>
+                    
+                </div>
+               <div class="sugg">
+                    <img src="./css/images/profil17.jpg">
+                        <span> <a href="#" >  Osman Deman </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">Innovation PDG et croissance Mondiale,
+                                cliquez sur SUIVRE pour les derniers...</p>
+                            <button onclick="follow(this)"> +Follow</button>
+                        </span>
+                    
+                </div>
+                <div class="sugg">
+                    <img src="./css/images/pr1.jpg">
+                        <span> <a href="#" >  SWIFT ACT </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">Company • Information Technology and Services</p>
+                            <button onclick="follow(this)"> +Follow</button>
+                        </span>
+                    
+                </div>
+                <button href="#" style="font-size: 15px; color:rgb(80, 78, 78);width:100% ;text-align:center;">Show all   </button>
+            </div>
+            <div class="follow-p">
+                <h4>People you may know</h4>
+                <p style=" margin-left:10px; color:grey"> from your school</p>
+                <div class="sugg">
+                    <img src="./css/images/pr3.jpg">
+                        <span> <a href="#" >  Mona Samir </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">Innovation PDG et croissance Mondiale,
+                                cliquez sur SUIVRE pour les derniers...</p>
+                            <button onclick="addConnector(this)"> <i class="fa-solid fa-user-plus"></i> Connect</button>
+                        </span>
+                    
+                </div>
+                <div class="sugg">
+                    <img src="./css/images/logo7.png">
+                        <span> <a href="#" >  SWIFT ACT </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">Company • Information Technology and Services</p>
+                            <button onclick="addConnector(this)"><i class="fa-solid fa-user-plus"></i> Connect</button>
+                        </span>
+                    
+                </div>
+                <div class="sugg">
+                    <img src="./css/images/my profil profil.jpg">
+                        <span> <a href="#" >  Amir Ayman </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">IITI trainee in Profrssional Web & BI track | Full stack .Net |Google Developer..</p>
+                            <button onclick="addConnector(this)"> <i class="fa-solid fa-user-plus"></i>Connect</button>
+                        </span>
+                    
+                </div>
+               <div class="sugg">
+                    <img src="./css/images/profil17.jpg">
+                        <span> <a href="#" >  Osman Deman </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">Innovation PDG et croissance Mondiale,
+                                cliquez sur SUIVRE pour les derniers...</p>
+                            <button onclick="follow(this)"> +Follow</button>
+                        </span>
+                    
+                </div>
+                <div class="sugg">
+                    <img src="./css/images/pr1.jpg">
+                        <span> <a href="#" >  SWIFT ACT </a><span style="font-size: 13px; margin-left:0%"></span> 
+                            <p style="color: gray;">Company • Information Technology and Services</p>
+                            <button> +Follow</button>
+                        </span>
+                    
+                </div>
+                <button href="#" style="font-size: 15px; color:rgb(80, 78, 78);width:100% ;text-align:center;">Show all   </button>
+            </div>
+        </div>
+    </div>
+
+        <script src="index.js"></script>
+
+</body>
+
+</html>
