@@ -818,7 +818,7 @@ padding-bottom: 30px;
 }
 .pro-pic{
   height: 76%;
-  width: 19%;
+  width: 15%;
 position: absolute;
 bottom: 0;
 left: 1.5rem;
@@ -837,7 +837,7 @@ transform: translateY(35%);
 }
 
 #profile-image {
-  width: 90%;
+  width: 80%;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
