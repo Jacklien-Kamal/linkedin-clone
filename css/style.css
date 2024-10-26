@@ -833,6 +833,7 @@ transform: translateY(35%);
 }
 
 .profile-container {
+    width:190px
   position: relative;
 }
 
